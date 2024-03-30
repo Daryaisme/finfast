@@ -42,17 +42,18 @@
 .container {
   width: 1440px;
 }
+.container_center {
+  margin: 0 auto;
+}
 .header__container {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.main__container,
-.footer__container {
-  margin: 0 auto;
-}
 .header {
+  position: absolute;
+  width: 100vw;
   padding: 25px 87px 24px 72px;
   background: #13111266;
 }
@@ -157,6 +158,7 @@
   font-weight: 600;
   border-radius: 10px;
   text-align: center;
+  line-height: 30px;
 }
 .footer__nav {
   max-height: 165px;
@@ -206,4 +208,24 @@
   width: 100%;
   height: 1px;
   background: #FFF;
+}
+.main__banner {
+  background: url(../images/banner_main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 480px 0 260px;
+}
+.main__banner-title {
+  font-family: Lora;
+  font-size: 72px;
+  line-height: 92px;
+  color: #FFF;
+}
+.main__button {
+  background: #0D2B74;
+  color: #FFF;
+}
+.main__banner-button {
+  width: 330px;
+  margin-top: 177px;
 }
