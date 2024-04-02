@@ -53,7 +53,7 @@
 }
 .header {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   padding: 25px 87px 24px 72px;
   background: #13111266;
 }
@@ -159,6 +159,7 @@
   border-radius: 10px;
   text-align: center;
   line-height: 30px;
+  cursor: pointer;
 }
 .footer__nav {
   max-height: 165px;
@@ -228,4 +229,134 @@
 .main__banner-button {
   width: 330px;
   margin-top: 177px;
+}
+.market {
+  padding: 100px 0;
+}
+.market__filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.market__filter {
+  /* padding: 15px 79px 15px 20px; */
+  border: 1px #808080 solid;
+  border-radius: 5px;
+  font-family: inherit;
+  width: fit-content;
+}
+.market__filter::placeholder {
+  color: #878788;
+  font-size: 20px;
+}
+.market__filters-button {
+  width: 202px;
+}
+.market__categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+.market__category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.category__button {
+  background: #FFF;
+  border: 1px #808080 solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 120px;
+  height: 120px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+.category__button-icon {
+  width: 51px;
+}
+.category__title {
+  color: #878788;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.product-tile {
+  width: fit-content;
+}
+.product-tile__images-container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 346px;
+  height: 346px;
+  border-radius: 10px;
+}
+.product-tile__image {
+  height: 346px;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.product-tile__image-slider {
+  position: absolute;
+  bottom: 8.5px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.dot-slider {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.dot-silder__dot {
+  width: 6px;
+  height: 6px;
+  background: #FFFFFF;
+  opacity: 0.5;
+  border-radius: 50%;
+}
+.dot-silder__dot_active {
+  opacity: 1;
+}
+.product-tile__info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+}
+.product-tile__description {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.product-tile__location {
+  font-size: 20px;
+  font-weight: 600;
+}
+.product-tile__concept-type,
+.product-tile__area {
+  font-weight: 300;
+  color: #808080;
+  line-height: 19px;
+}
+.product-tile__price {
+  font-weight: 600;
+  color: #0D2B74;
+  line-height: 19px;
+}
+.product-tile__id {
+  text-align: right;
+  font-size: 20px;
+  line-height: 19px;
+  margin-bottom: 38.5px;
+}
+.product-tile__mark-icons {
+  display: flex;
+  gap: 24.5px;
+}
+.product-tile__mark-icon {
+  cursor: pointer;
 }
