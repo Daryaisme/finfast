@@ -1,0 +1,16 @@
+[
+  {
+    "id": 123,
+    "images": [
+      "assets/images/hotel.jpg",
+      "assets/images/hotel.jpg",
+      "assets/images/hotel.jpg",
+      "assets/images/hotel.jpg",
+      "assets/images/hotel.jpg"
+    ],
+    "location": "Aksu, Antalya",
+    "conceptType": "Концепция отеля",
+    "area": "От 50 кв.м.",
+    "price": "От 195 000 $"
+  }
+]
