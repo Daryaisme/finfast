@@ -47,13 +47,20 @@
       </div>
       <div class="market">
         <div class="container container_center">
-          <div class="market__filters">
-            <input type="text" placeholder="Тип" class="market__filter">
-            <input type="number" placeholder="Комнат" class="market__filter">
-            <input type="text" placeholder="Расположение" class="market__filter">
-            <input type="number" placeholder="Цена от" class="market__filter">
-            <input type="number" placeholder="Цена до" class="market__filter">
-            <input type="number" placeholder="ID" class="market__filter">
+          <div class="market__filters filter-list">
+            <input type="text" placeholder="Тип" class="filter-list-option">
+            <input type="number" min="1" max="5" placeholder="Комнат" class="filter-list-option">
+            <div class="filter-list-option select-list__container">
+              <div class="select-list__title">Расположение</div>
+              <ul class="select-list">
+                <li class="select-list-option select-list-option_active">Aksu, Antalya</li>
+                <li class="select-list-option">Moscow, Russia</li>
+                <li class="select-list-option">Dubai, UAE</li>
+              </ul>
+            </div>
+            <input type="number" min="1" placeholder="Цена от" class="filter-list-option">
+            <input type="number" min="1" placeholder="Цена до" class="filter-list-option">
+            <input type="number" min="1" placeholder="ID" class="filter-list-option">
             <div class="main__button market__filters-button button">Поиск</div>
           </div>
           <div class="market__categories">
@@ -267,6 +274,7 @@
     </div>
     <div class="footer__line"></div>
   </footer>
-  <script type="module" src="assets/scripts/main.js"></script>
+  <script type="module" src="assets/scripts/generateProducts.js"></script>
+  <script type="module" src="assets/scripts/productSortingFiltering.js"></script>
 </body>
 </html>

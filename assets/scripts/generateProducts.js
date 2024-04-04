@@ -41,7 +41,13 @@ function generateProduct(data) {
     productImagesSlider.appendChild(sliderDot);
   }
 
-  productImagesContainer.appendChild(productImagesSlider);
+  const heartIcon = document.createElement('img');
+  heartIcon.src = 'assets/images/heart2-icon.svg';
+  heartIcon.alt = "Heart icon";
+  heartIcon.title = "Heart icon";
+  heartIcon.classList.add('product-tile__heart-icon');
+
+  productImagesContainer.append(heartIcon, productImagesSlider);
 
   const productInformation = document.createElement('div');
   productInformation.classList.add('product-tile__info');
