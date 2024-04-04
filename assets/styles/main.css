@@ -225,6 +225,10 @@
 .main__button {
   background: #0D2B74;
   color: #FFF;
+  border: 1px #0D2B74 solid;
+}
+.main__button:hover {
+  border: 1px #FFF solid;
 }
 .main__banner-button {
   width: 330px;
@@ -300,9 +304,11 @@
 }
 .product-tile__heart-icon {
   position:absolute; 
+  z-index: 1;
   top: 21px;
   right: 14px;
   height: 21px;
+  cursor: pointer;
 }
 .product-tile__images-container {
   position: relative;
@@ -323,6 +329,14 @@
   bottom: 8.5px;
   transform: translateX(-50%);
   left: 50%;
+}
+.product-tile__image-slider-arrow {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+.product-tile__image-slider-arrow_right {
+  right: 0;
 }
 .dot-slider {
   display: flex;

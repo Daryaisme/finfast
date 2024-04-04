@@ -26,12 +26,19 @@ function generateProduct(data) {
     productImage.alt = "Hotel";
     productImage.title = "Hotel";
     productImage.classList.add('product-tile__image');
+    if (j === 0) productImage.classList.add('product-tile__image_active');
 
     productImagesContainer.appendChild(productImage);
   }
 
   const productImagesSlider = document.createElement('div');
   productImagesSlider.classList.add('product-tile__image-slider', 'dot-slider');
+
+  const leftArrowSlider = document.createElement('div');
+  leftArrowSlider.classList.add('product-tile__image-slider-arrow', 'product-tile__image-slider-arrow_left');
+
+  const rightArrowSlider = document.createElement('div');
+  rightArrowSlider.classList.add('product-tile__image-slider-arrow', 'product-tile__image-slider-arrow_right');
 
   for (let j = 0; j < productImagesCount; j++) {
     const sliderDot = document.createElement('div');
@@ -47,7 +54,7 @@ function generateProduct(data) {
   heartIcon.title = "Heart icon";
   heartIcon.classList.add('product-tile__heart-icon');
 
-  productImagesContainer.append(heartIcon, productImagesSlider);
+  productImagesContainer.append(heartIcon, productImagesSlider, leftArrowSlider, rightArrowSlider);
 
   const productInformation = document.createElement('div');
   productInformation.classList.add('product-tile__info');
