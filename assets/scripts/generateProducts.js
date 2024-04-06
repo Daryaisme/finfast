@@ -1,12 +1,17 @@
 import productData from "../data/products.json" with { type: 'json' };
 
-const productContent = document.querySelector('.market__product-tiles');
-const productCount = 20;
+function generateProducts(n) {
+  const products = [];
 
-generateProducts(productData[0], productCount);
+  generateGroupProducts(products, productData[0], n);
+  generateGroupProducts(products, productData[1], n + 4);
+  generateGroupProducts(products, productData[2], n - 1);
 
-function generateProducts(data, n) {
-  for (let i = 0; i < n; i++) productContent.appendChild(generateProduct(data));
+  return products;
+}
+
+function generateGroupProducts(arr, data, n) {
+  for (let i = 0; i < n; i++) arr.push(generateProduct(data));
 }
 
 function generateProduct(data) {
@@ -114,3 +119,5 @@ function generateProduct(data) {
 
   return product;
 }
+
+export default generateProducts;
