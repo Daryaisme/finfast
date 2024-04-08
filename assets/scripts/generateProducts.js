@@ -55,8 +55,7 @@ function generateProduct(data) {
 
   const heartIcon = document.createElement('img');
   heartIcon.src = 'assets/images/heart2-icon.svg';
-  heartIcon.alt = "Heart icon";
-  heartIcon.title = "Heart icon";
+  heartIcon.alt = "";
   heartIcon.classList.add('product-tile__heart-icon');
 
   productImagesContainer.append(heartIcon, productImagesSlider, leftArrowSlider, rightArrowSlider);
@@ -98,14 +97,12 @@ function generateProduct(data) {
   const like = document.createElement('img');
   like.classList.add('product-tile__mark-icon');
   like.src = 'assets/images/like_icon.svg';
-  like.alt = "Like icon";
-  like.title = "Like icon";
+  like.alt = "";
 
   const dislike = document.createElement('img');
   dislike.classList.add('product-tile__mark-icon');
   dislike.src = 'assets/images/dislike_icon.svg';
-  dislike.alt = "Dislike icon";
-  dislike.title = "Dislike icon";
+  dislike.alt = "";
 
   productMarkIcons.append(like, dislike);
 
