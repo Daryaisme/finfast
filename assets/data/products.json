@@ -1,0 +1,39 @@
+[
+  {
+    "id": 123,
+    "images": [
+      "assets/images/hotel.jpg",
+      "assets/images/hotel.jpg",
+      "assets/images/hotel.jpg",
+      "assets/images/hotel.jpg",
+      "assets/images/hotel.jpg"
+    ],
+    "location": "Aksu, Antalya",
+    "conceptType": "Концепция отеля",
+    "area": "От 50 кв.м.",
+    "price": "От 195 000 $"
+  },
+  {
+    "id": 234,
+    "images": [
+      "assets/images/hotel.jpg",
+      "assets/images/hotel.jpg",
+      "assets/images/hotel.jpg"
+    ],
+    "location": "Moscow, Russia",
+    "conceptType": "Концепция отеля",
+    "area": "От 35 кв.м.",
+    "price": "От 205 000 $"
+  },
+  {
+    "id": 345,
+    "images": [
+      "assets/images/hotel.jpg",
+      "assets/images/hotel.jpg"
+    ],
+    "location": "Dubai, UAE",
+    "conceptType": "Концепция отеля",
+    "area": "От 45 кв.м.",
+    "price": "От 150 000 $"
+  }
+]

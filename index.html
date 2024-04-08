@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles/main.css">
+  <title>Fin Fast | Suravtsova</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__block header__block_left">
+        <img 
+          src="assets/images/logo.svg" 
+          alt="Fin Fast logo" 
+          title="Fin Fast" 
+          class="header__logo logo"
+        >
+        <div class="theme-switch">
+          <div class="theme-switch__button">Dark</div>
+        </div>
+      </div>
+      <div class="header__block header__block_right">     
+        <img 
+          src="assets/images/www-icon.svg" 
+          alt=""
+          class="header__icon"
+        >
+        <div class="header__menu">
+          <div class="header__cross">
+            <div class="header__cross-line"></div>
+            <div class="header__cross-line"></div>
+            <div class="header__cross-line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__container">
+      <div class="main__banner banner">
+        <div class="container container_center">
+          <div class="main__banner-title">Поиск закончится здесь...</div>
+          <div class="main__button main__banner-button button banner-button">Связаться</div>
+        </div>
+      </div>
+      <div class="market">
+        <div class="container container_center">
+          <div class="market__filters filter-list">
+            <input placeholder="Тип" class="filter-list-option">
+            <input type="number" min="1" max="5" placeholder="Комнат" class="filter-list-option">
+            <div class="filter-list-option select-list__container">
+              <div class="select-list__title">Расположение</div>
+              <ul class="select-list">
+                <li class="select-list-option">Aksu, Antalya</li>
+                <li class="select-list-option">Moscow, Russia</li>
+                <li class="select-list-option">Dubai, UAE</li>
+              </ul>
+            </div>
+            <input type="number" min="1" placeholder="Цена от" class="filter-list-option">
+            <input type="number" min="1" placeholder="Цена до" class="filter-list-option">
+            <input type="number" min="1" placeholder="ID" class="filter-list-option">
+            <div class="main__button market__filters-button button">Поиск</div>
+          </div>
+          <div class="market__categories">
+            <div class="market__category category">
+              <button class="category__button">
+                <img 
+                  src="assets/images/heart-icon.svg" 
+                  alt=""
+                  class="category__button-icon"
+                >
+              </button>
+              <div class="category__title">Избранное</div>
+            </div>
+            <div class="market__category category">
+              <button class="category__button">
+                <img 
+                  src="assets/images/star_icon.svg" 
+                  alt=""
+                  class="category__button-icon"
+                >
+              </button>
+              <div class="category__title">Топ</div>
+            </div>
+            <div class="market__category category">
+              <button class="category__button">
+                <img 
+                  src="assets/images/energy_icon.svg" 
+                  alt=""
+                  class="category__button-icon"
+                >
+              </button>
+              <div class="category__title">Новые</div>
+            </div>
+            <div class="market__category category">
+              <button class="category__button">
+                <img 
+                  src="assets/images/fire_icon.svg" 
+                  alt=""
+                  class="category__button-icon"
+                >
+              </button>
+              <div class="category__title">Горячие</div>
+            </div>
+          </div>
+          <div class="market__product-tiles"></div>
+          <div class="market__pagination pagination">
+            <div class="pagination__item pagination__arrow pagination__arrow_left">
+              <img 
+                src="assets/images/arrow.svg"
+                alt=""
+                class="pagination__arrow-image"
+              >
+            </div>
+            <div class="pagination__item pagination__arrow pagination__arrow_right">
+              <img 
+                src="assets/images/arrow.svg"
+                alt=""
+                class="pagination__arrow-image"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__statistics">
+        <div class="container container_center">
+          <div class="statistics__content-container">
+            <div class="statistics__content-title">в цифрах</div>
+            <div class="statistics__content">
+              <div class="statistics__content-item-container">
+                <div class="statistics__content-item-title">х 5</div>
+                <div class="statistics__content-item">рост рынка за последние 3 года</div>
+              </div>
+              <div class="statistics__content-item-container">
+                <div class="statistics__content-item-title">13,5 млн.</div>
+                <div class="statistics__content-item">туристов за 2022 год</div>
+              </div>
+              <div class="statistics__content-item-container">
+                <div class="statistics__content-item-title">200 км.</div>
+                <div class="statistics__content-item">чистейшего побережья</div>
+              </div>
+              <div class="statistics__content-item-container">
+                <div class="statistics__content-item-title">300</div>
+                <div class="statistics__content-item">солнечных дней в году</div>
+              </div>
+            </div>
+          </div>
+          <div class="statistics__video-container">
+            <video
+              poster="assets/images/video-poster.png"
+              class="statistics__video video" 
+            >
+              <source src="assets/videos/Sunset.mp4" type="video/mp4">
+              Ваш браузер не поддерживает воспроизведение видео.
+            </video>
+            <div class="video__play-button-container">
+              <img 
+                src="assets/images/start-icon.svg"
+                alt=""
+                class="video__play-button video__play-button_start"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main__form-section">
+        <div class="container container_center main__form-section-container">
+          <div class="main__form-text">
+            <div class="main__form-title">Оставить свой запрос</div>
+            <div class="main__form-subtitle">Как мы можем вам помочь?</div>
+          </div>
+          <form action="#" class="main__form form">
+            <input placeholder="Имя" class="form__input">
+            <input type="tel" placeholder="Телефон" class="form__input">
+            <input placeholder="E-mail" class="form__input">
+            <input placeholder="ID объекта" class="form__input">
+            <textarea class="form__input form__textarea"></textarea>
+            <div class="form__checkbox-container">
+              <input type="checkbox" class="form__input form__checkbox">
+              <div class="form__checkbox-title">
+                Нажимая “Отправить” Вы даете свое согласие на обработку
+                <span class="form__checkbox-title form__checkbox-title_underlined">персональных данных</span>
+              </div>
+            </div>
+            <button type="submit" class="main__button button submit-button">Отправить</button>
+          </form>
+        </div>
+      </div>
+      <div class="main__banner-second banner">
+        <div class="container container_center main__banner-second-container">
+          <p class="main__banner-second-title">Недвижимость стала проще. Вместе с FIN FAST.</p>
+          <div class="main__button button banner-button">Связаться</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container_center container">
+      <div class="footer__contacts-container">
+        <img 
+          src="assets/images/logo.svg" 
+          alt="Fin Fast logo" 
+          title="Fin Fast" 
+          class="footer__logo logo"
+        >
+        <div class="footer__contacts">
+          <div class="contact">
+            <img 
+              src="assets/images/tel-icon.svg" 
+              alt="" 
+              class="contact__icon"
+            >
+            <a href="tel: +90 123 456 78 90" class="contact__details">+90 123 456 78 90</a>
+          </div>
+          <div class="contact">
+            <img 
+              src="assets/images/globus-icon.svg" 
+              alt=""
+              class="contact__icon"
+            >
+            <a href="finfast.com" class="contact__details">finfast.com</a>
+          </div>
+          <div class="contact">
+            <img 
+              src="assets/images/mail-icon.svg" 
+              alt=""
+              class="contact__icon"
+            >
+            <a href="mailto: info@finfast.com" class="contact__details">info@finfast.com</a>
+          </div>
+        </div>
+        <div class="footer__button button">Связаться</div>
+      </div>
+      <ul class="footer__nav nav">
+        <li class="nav__item nav__item_active">Недвижимость</li>
+        <li class="nav__item">Финансы</li>
+        <li class="nav__item">Бизнес</li>
+        <li class="nav__item">Гражданство</li>
+        <li class="nav__item">ВНЖ</li>
+        <li class="nav__item">Кипр</li>
+        <li class="nav__item">Колливинг</li>
+        <li class="nav__item">Медицина</li>
+        <li class="nav__item">Блог</li>
+      </ul>
+      <div class="footer__social-media">
+        <a href="#" class="social-network__container">
+          <img 
+            src="assets/images/telegram-icon.svg" 
+            alt="Telegram icon"
+            title="Telegram"
+            class="social-network"
+          >
+        </a>
+        <a href="#" class="social-network__container">
+          <img 
+            src="assets/images/instagram-icon.svg" 
+            alt="Instagram icon"
+            title="Instagram"
+            class="social-network"
+          >
+        </a>
+        <a href="#" class="social-network__container">
+          <img 
+            src="assets/images/youtube-icon.svg" 
+            alt="YouTube icon"
+            title="YouTube"
+            class="social-network"
+          >
+        </a>
+        <a href="#" class="social-network__container">
+          <img 
+            src="assets/images/whatsapp-icon.svg" 
+            alt="WhatsApp icon"
+            title="WhatsApp"
+            class="social-network"
+          >
+        </a>
+      </div>
+    </div>
+    <div class="footer__copyright copyright">
+      © 2010-2022 Fin Fast. All Rights Reserved.
+    </div>
+    <div class="footer__line"></div>
+  </footer>
+  <script type="module" src="assets/scripts/productSortingFiltering.js" defer></script>
+  <script src="assets/scripts/slider.js" defer></script>
+</body>
+</html>
