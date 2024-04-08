@@ -47,7 +47,7 @@
       <div class="market">
         <div class="container container_center">
           <div class="market__filters filter-list">
-            <input type="text" placeholder="Тип" class="filter-list-option">
+            <input placeholder="Тип" class="filter-list-option">
             <input type="number" min="1" max="5" placeholder="Комнат" class="filter-list-option">
             <div class="filter-list-option select-list__container">
               <div class="select-list__title">Расположение</div>
@@ -231,6 +231,29 @@
               >
             </div>
           </div>
+        </div>
+      </div>
+      <div class="main__form-section">
+        <div class="container container_center main__form-section-container">
+          <div class="main__form-text">
+            <div class="main__form-title">Оставить свой запрос</div>
+            <div class="main__form-subtitle">Как мы можем вам помочь?</div>
+          </div>
+          <form action="#" class="main__form form">
+            <input placeholder="Имя" class="form__input">
+            <input type="tel" placeholder="Телефон" class="form__input">
+            <input placeholder="E-mail" class="form__input">
+            <input placeholder="ID объекта" class="form__input">
+            <textarea class="form__input form__textarea"></textarea>
+            <div class="form__checkbox-container">
+              <input type="checkbox" class="form__input form__checkbox">
+              <div class="form__checkbox-title">
+                Нажимая “Отправить” Вы даете свое согласие на обработку
+                <span class="form__checkbox-title form__checkbox-title_underlined">персональных данных</span>
+              </div>
+            </div>
+            <button type="submit" class="main__button button submit-button">Отправить</button>
+          </form>
         </div>
       </div>
     </div>
