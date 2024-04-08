@@ -210,10 +210,12 @@
   height: 1px;
   background: #FFF;
 }
-.main__banner {
-  background: url(../images/banner_main.png);
+.banner {
   background-repeat: no-repeat;
   background-size: cover;
+}
+.main__banner {
+  background-image: url(../images/banner_main.png);
   padding: 480px 0 260px;
 }
 .main__banner-title {
@@ -231,8 +233,10 @@
   border: 1px #FFF solid;
 }
 .main__banner-button {
-  width: 330px;
   margin-top: 177px;
+}
+.banner-button {
+  width: 330px;
 }
 .market {
   padding: 100px 0;
@@ -581,4 +585,32 @@
 }
 .submit-button {
   border-radius: 5px;
+}
+.main__banner-second {
+  position: relative;
+  background-image: url(../images/banner-second_main.png);
+  background-position-y: center;
+  padding: 143px 0;
+}
+.main__banner-second::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  background: #332E3FB2;
+  width: 100%;
+  height: 100%;
+}
+.main__banner-second-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__banner-second-title {
+  font-family: Lora;
+  font-weight: 500;
+  font-size: 36px;
+  color: #FFF;
 }
