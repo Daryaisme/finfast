@@ -27,20 +27,6 @@ paginationNumberItems.forEach(paginationNumberItem => {
 let products = productListView(allProducts, productsPerPage, 1);
 updateProductListView(products);
 
-// const productItems = document.querySelectorAll('.product-tile');
-// let products = Array.from(productItems).map(product => ({
-//   id: +product.id,
-//   location: product.location,
-//   price: product.price,
-//   conceptType: product.conceptType,
-//   isFavourite: product.classList.contains('product-tile_favourite'),
-//   isBubble: product.classList.contains('product-tile_bubble'),
-//   isFruit: product.classList.contains('product-tile_fruit'),
-//   isCoffee: product.classList.contains('product-tile_coffee'),
-//   isShake: product.classList.contains('product-tile_shake'),
-//   orderCount: +product.dataset.orderCount,
-// }));
-
 function handleSelectParameterClick() {
   selectLocation.classList.toggle('select-list_active');
   selectLocationTitle.classList.toggle('select-list__title_active');
