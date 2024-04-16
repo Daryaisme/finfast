@@ -131,14 +131,23 @@
   width: 100%;
 }
 .burger-menu__nav-content {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 22px;
+  list-style: none;
+  color: #FFF;
 }
-.burger-menu__nav-content-item:first-child {
+.burger-menu__nav-content_active {
+  display: flex;
+}
+.burger-menu__nav-content:nth-child(4),
+.burger-menu__nav-content:nth-child(5) {
+  justify-content: center;
+}
+.burger-menu__nav-content[data-nav-item-type='Недвижимость'] .burger-menu__nav-content-item:first-child {
   margin-bottom: 7px;
 }
-.burger-menu__nav-content-item:last-child {
+.burger-menu__nav-content[data-nav-item-type='Недвижимость'] .burger-menu__nav-content-item:last-child {
   margin-top: 44px;
 }
 .burger-menu__nav-content-item_bold {
@@ -150,11 +159,6 @@
 }
 .burger-menu__nav-item_active .burger-menu__nav-item-arrow {
   transform: rotate(0);
-}
-.burger-menu__nav-content {
-  list-style: none;
-  color: #FFF;
-
 }
 .burger-menu__nav-content-item {
   font-size: 24px;
