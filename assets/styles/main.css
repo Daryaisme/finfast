@@ -49,13 +49,123 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  padding: 25px 87px 24px 72px;
+}
+.burger-menu__header-container {
+  display: flex;
+  align-items: center;
+  padding: 41.5px 0 24px 0;
 }
 .header {
   position: absolute;
   width: 100%;
-  padding: 25px 87px 24px 72px;
   background: #13111266;
+  backdrop-filter: blur(10px);
+}
+.burger-menu__header {
+  display: block;
+  background: none;
+  backdrop-filter: none;
+}
+.burger-menu {
+  display: none;
+}
+.burger-menu_open {
+  display: block;
+}
+.burger-menu {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/burger-menu-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.burger-menu__container {
+  position: relative;
+  z-index: 1;
+}
+.burger-menu::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  background: #13111266;
+  backdrop-filter: blur(8px);
+  width: 100%;
+  height: 100%;
+}
+.burger-menu__nav {
+  display: flex;
+  gap: 133px;
+  margin-top: 210px;
+  margin-bottom: 167.5px;
+}
+.burger-menu__nav-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 387px;
+}
+.burger-menu__nav-list::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #FFF;
+  left: 462.5px;
+}
+.burger-menu__nav-item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  line-height: 23px;
+  font-weight: 800;
+  color: #FFF;
+  cursor: pointer;
+  width: 100%;
+}
+.burger-menu__nav-content {
+  display: none;
+  flex-direction: column;
+  gap: 22px;
+  list-style: none;
+  color: #FFF;
+}
+.burger-menu__nav-content_active {
+  display: flex;
+}
+.burger-menu__nav-content:nth-child(4),
+.burger-menu__nav-content:nth-child(5) {
+  justify-content: center;
+}
+.burger-menu__nav-content[data-nav-item-type='Недвижимость'] .burger-menu__nav-content-item:first-child {
+  margin-bottom: 7px;
+}
+.burger-menu__nav-content[data-nav-item-type='Недвижимость'] .burger-menu__nav-content-item:last-child {
+  margin-top: 44px;
+}
+.burger-menu__nav-content-item_bold {
+  font-weight: 800;
+}
+.burger-menu__nav-item-arrow {
+  height: 28px;
+  transform: rotate(90deg);
+}
+.burger-menu__nav-item_active .burger-menu__nav-item-arrow {
+  transform: rotate(0);
+}
+.burger-menu__nav-content-item {
+  font-size: 24px;
+}
+.burger-menu__button {
+  width: 312px;
+  float: right;
 }
 .header__block {
   display: flex;
@@ -63,8 +173,27 @@
 .header__block_left {
   gap: 119px;
 }
+.burger-menu__header-container .header__block_left {
+  gap: 53px;
+}
+.header__contacts {
+  display: none;
+}
+.header__contact-details {
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 600;
+}
+.header__contact-icon {
+  height: 19px;
+}
 .header__block_right {
   gap: 67.5px;
+  margin-left: auto;
+}
+.burger-menu__header-container .header__block_right {
+  position: absolute;
+  right: 90px;
 }
 .header__logo {
   width: 299px;
@@ -94,13 +223,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   width: 45px;
+  height: 40px;
+  cursor: pointer;
 }
 .header__cross-line {
   border: 2px #FFF solid;
   border-radius: 3px;
   width: 100%
+}
+.burger-menu__header .header__cross-line:nth-child(2) {
+  opacity: 0;
+}
+.burger-menu__header .header__cross-line:nth-child(1) {
+  transform: rotate(45deg) translateY(9px) translateX(6.5px);
+  border: 1px #FFF solid;
+}
+.burger-menu__header .header__cross-line:nth-child(3) {
+  transform: rotate(-45deg) translateY(-9px) translateX(6.5px);
+  border: 1px #FFF solid;
 }
 .footer {
   position: relative;
@@ -134,19 +277,38 @@
   gap: 15px;
   margin: 54.5px 0 73.5px;
 }
+.burger-menu__footer .footer__contacts {
+  flex-direction: row;
+  gap: 66px;
+  margin: 321.5px 0 0 0;
+}
 .contact {
   display: flex;
   align-items: center;
   gap: 20px;
 }
+.burger-menu__footer .contact {
+  gap: 25px;
+}
+.header__contact {
+  gap: 12px;
+}
 .contact__icon {
   height: 16px;
+}
+.burger-menu__footer .contact__icon {
+  height: 31.5px;
 }
 .contact__details {
   text-decoration: none;
   color: #FFF;
   font-family: Lora;
   font-size: 14px;
+}
+.burger-menu__footer .contact__details {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 18px;
 }
 .footer__button {
   width: 330px;
@@ -164,19 +326,17 @@
 .footer__nav {
   max-height: 165px;
   margin: 35.5px 71px 0 132px;
-}
-.nav {
   column-count: 3;
   gap: 118px;
 }
-.nav__item {
+.footer__nav-item {
   list-style: none;
   font-family: Lora;
   flex-shrink: 0;
   margin-bottom: 47px;
   width: fit-content;
 }
-.nav__item_active {
+.footer__nav-item_active {
   color: #5082FC;
 }
 .footer__social-media {
@@ -583,7 +743,8 @@
 .form__checkbox-title_underlined {
   text-decoration: underline;
 }
-.submit-button {
+.submit-button,
+.burger-menu__button {
   border-radius: 5px;
 }
 .main__banner-second {
